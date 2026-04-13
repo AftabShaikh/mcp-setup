@@ -8,9 +8,7 @@ SUBSCRIPTION_ID = "8086c527-cc16-4ef8-9d45-6a8ff4849350"
 
 
 def list_resource_groups():
-    credential = DefaultAzureCredential(
-        additionally_allowed_tenants=[TENANT_ID]
-    )
+    credential = DefaultAzureCredential(additionally_allowed_tenants=[TENANT_ID])
     client = ResourceManagementClient(credential, SUBSCRIPTION_ID)
 
     print(f"{'Resource Group':<50} {'Location':<20}")
