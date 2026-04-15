@@ -41,6 +41,13 @@ LLM (with MCP): Queries Terraform registry for latest provider version,
 <img src="./images/2.png" alt="Simple diagram showing GitHub Copilot icon connected to mcp.json configuration file, with lines extending to multiple MCP server icons (Azure, Terraform, Git) representing the plug-and-play integration" width="600">
 
 ---
+## MCP - Participants
+- **MCP Host**: The AI application that coordinates and manages one or multiple MCP clients
+- **MCP Client**: A component that maintains a connection to an MCP server and obtains context from an MCP server for the MCP host to use
+- **MCP Server**: A program that provides context to MCP clients
+
+<img src="./images/mcp-concepts.jpg" alt="Simple diagram showing MCP participants" width="600">
+---
 
 ## MCP Architecture
 
