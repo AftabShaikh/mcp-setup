@@ -86,7 +86,7 @@ MCP uses **JSON-RPC 2.0** for communication between Copilot and MCP servers.
 
 ### Three Core Capabilities
 
-**1. Tools** — Functions the AI can invoke
+**1. Tools** — Functions the AI can invoke. Executable functions that AI applications can invoke to perform actions (e.g., file operations, API calls, database queries)
 ```json
 // Azure MCP: Query live cloud resources
 {
@@ -104,7 +104,7 @@ MCP uses **JSON-RPC 2.0** for communication between Copilot and MCP servers.
 
 ---
 
-**2. Resources** — Data the AI can read  
+**2. Resources** — Data the AI can read. Data sources that provide contextual information to AI applications (e.g., file contents, database records, API responses)  
 ```json
 // Git MCP: Access repository history
 {
@@ -118,7 +118,7 @@ MCP uses **JSON-RPC 2.0** for communication between Copilot and MCP servers.
 
 ---
 
-**3. Prompts** — Pre-built templates for common workflows  
+**3. Prompts** — Pre-built templates for common workflows. Reusable templates that help structure interactions with language models (e.g., system prompts, few-shot examples)  
 ```json
 // AVM MCP: Validate against Azure standards
 {
